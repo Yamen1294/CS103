@@ -169,3 +169,88 @@ min(num_list)
 max(num_list)
 sum(num_list)
 print(list1,list2,list3,list4,list5,num_list,list6)
+#########For loop########
+"""
+for loop is used to loop on each element in list or tuple or even strings
+
+we can use for loop with range function to loop from specific range
+"""
+
+for char in "Hello":
+        print(char,end=" ")
+
+for i in range(5):
+        print(i,end=" ")
+
+for j in range(0,11):
+        print(j,end=" ")
+
+"""
+we can even make nested loop 
+
+and the meaning is when making the first loop x is taking values from 1 to 4 because we stop at 5 and not taking it
+
+the secode loop is j in range of x we know x is 1 2 3 4 
+so it's basically j in range 1 then 2 then 3 then 4
+"""
+for x in range(1,5):
+    for y in range(x):
+        print(y,end=" ")
+    print()
+
+
+
+#if statements 
+
+"""
+we use if to run code in specific condition if the condition is true then the code will execute if not the code will not execute 
+"""
+
+age =18
+if age >=18:
+   print("You are adult")
+else:
+  print("You underage")
+
+
+x =5
+y =10
+
+if x>y: #x is not more than y so it's false
+   print("x is greater")
+elif y<x:
+    print("y is greater")
+else:
+   print("they are equal")
+
+
+#While loop
+"""
+while loop is used when we don't know the range specific and we can make infinite loop with while loop too
+"""
+
+#normal loop
+
+i=0
+while i<10:
+   print(i)
+   i+=1
+
+# the output is 0 1 2 3 4 5 6 7 8 9
+#it compares between i and 10 while i is #smaller print it and add one to it till it #reaches 10 and stop
+
+#infinite loop
+
+n=0
+while n<10:
+   print("Hello world")
+"""
+it will print Hello world for infinite time because 10 is always greater than 0 and there nothing change this condition 
+"""
+
+while True:
+   print("i love python")
+
+"""
+same concept while True and it always true so it's infinite loop
+"""
